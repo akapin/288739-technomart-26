@@ -98,9 +98,9 @@
       </ul>
 
       <section class="page-content__product-filters product-filters">
-        <h2 class="product-filters__header">Фильтр товаров</h2>
+        <h2 class="product-filters__title">Фильтр товаров</h2>
         <div class="product-filters__price-filter price-filter">
-          <h3 class="price-filter__header">Цена:</h3>
+          <h3 class="price-filter__title">Цена:</h3>
           <p class="price-filter__slider"></p>
           <p class="price-filter__range-input range-input">
             <span class="range-input__min">0</span> -
@@ -114,22 +114,53 @@
       </section>
 
       <section class="page-content__product-sort product-sort">
-        <h2 class="product-sort__header">Сортировка</h2>
-        <ul class="product-sort__types">
-          <li class="product-sort__type">
-            <button class="button product-sort__button--active">По цене</button>
-          </li>
-          <li class="product-sort__type">
-            <button class="button product-sort__button">По типу</button>
-          </li>
-          <li class="product-sort__type">
-            <button class="button product-sort__button">По функционалу</button>
-          </li>
-        </ul>
+        <h2 class="product-sort__title">Сортировка:</h2>
+        <form class="product-sort__options sort-options">
+          <input
+            class="sort-options__input sort-options__input--active"
+            type="radio"
+            id="sort-price"
+            name="sort-options"
+            value="price"
+            checked
+          />
+          <label
+            class="sort-options__label sort-options__label--active"
+            for="sort-price"
+          >
+            По цене
+          </label>
+          <input
+            class="sort-options__input"
+            type="radio"
+            id="sort-type"
+            name="sort-options"
+            value="type"
+          />
+          <label class="sort-options__label" for="sort-type">По типу</label>
+          <input
+            class="sort-options__input"
+            type="radio"
+            id="sort-function"
+            name="sort-options"
+            value="function"
+          />
+          <label class="sort-options__label" for="sort-function">
+            По функционалу
+          </label>
+        </form>
+        <div class="product-sort__buttons">
+          <button class="button product-sort__button-asc" type="button">
+            По возрастанию
+          </button>
+          <button class="button product-sort__button-desc" type="button">
+            По убыванию
+          </button>
+        </div>
       </section>
 
       <section class="page-content__catalog catalog">
-        <h2 class="catalog__header">Список перфораторов</h2>
+        <h2 class="catalog__title">Список перфораторов</h2>
         <ul class="catalog__list">
           <li class="catalog__product product">
             <a class="product__link" href="">
@@ -383,6 +414,9 @@
         </ul>
 
         <ul class="catalog__pagination pagination">
+          <li class="pagination__item">
+            <a class="button pagination__link" href="">Предыдущая</a>
+          </li>
           <li class="button pagination__item pagination__item--active">1</li>
           <li class="pagination__item">
             <a class="button pagination__link" href="">2</a>
@@ -397,8 +431,8 @@
       </section>
 
       <section class="page-content__product-desc product-desc">
-        <h2 class="product-desc__header">Пара слов о перфораторах</h2>
-        <p class="product-desc__text">
+        <h2 class="product-desc__title">Пара слов о перфораторах</h2>
+        <p class="product-desc__description">
           Перфоратор — универсальный строительный инструмент. Предназначен для
           сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют
           электромеханические и пневматические перфораторы. Современные модели
