@@ -98,19 +98,105 @@
       </ul>
 
       <section class="page-content__product-filters product-filters">
-        <h2 class="product-filters__title">Фильтр товаров</h2>
-        <div class="product-filters__price-filter price-filter">
-          <h3 class="price-filter__title">Цена:</h3>
-          <p class="price-filter__slider"></p>
-          <p class="price-filter__range-input range-input">
-            <span class="range-input__min">0</span> -
-            <span class="range-input__max">3000</span>
-          </p>
-        </div>
-        <!-- Здесь будет форма -->
-        <button class="button product-filters__button" type="submit">
-          Показать
-        </button>
+        <h2 class="product-filters__title">Фильтр:</h2>
+        <form
+          class="product-filters__form"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+        >
+          <fieldset>
+            <legend>Цена:</legend>
+            <p class="price-filter__slider"></p>
+            <p class="price-filter__range-input range-input">
+              <span class="range-input__min">0</span> -
+              <span class="range-input__max">3000</span>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="filter-price"
+                  id="filter-price-bosch"
+                  checked
+                />
+                <label for="filter-price-bosch">
+                  Bosch
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="filter-price"
+                  id="filter-price-interskol"
+                />
+                <label for="filter-price-interskol">
+                  Интерскол
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="filter-price"
+                  id="filter-price-makita"
+                  checked
+                />
+                <label for="filter-price-makita">
+                  Makita
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="filter-price"
+                  id="filter-price-dewalt"
+                />
+                <label for="filter-price-dewalt">
+                  Dewalt
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="filter-price"
+                  id="filter-price-hitachi"
+                />
+                <label for="filter-price-hitachi">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="filter-power"
+                  value="secondary"
+                  id="filter-power-secondary"
+                  checked
+                />
+                <label for="filter-power-secondary">Аккумуляторные</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="filter-power"
+                  value="primary"
+                  id="filter-power-primary"
+                />
+                <label for="filter-power-primary">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button product-filters__button" type="submit">
+            Показать
+          </button>
+        </form>
       </section>
 
       <section class="page-content__product-sort product-sort">
@@ -160,7 +246,7 @@
       </section>
 
       <section class="page-content__catalog catalog">
-        <h2 class="catalog__title">Список перфораторов</h2>
+        <h2 class="catalog__title visually-hidden">Список перфораторов</h2>
         <ul class="catalog__list">
           <li class="catalog__product product">
             <a class="product__link" href="">
@@ -526,5 +612,17 @@
         </a>
       </p>
     </footer>
+
+    <section class="popup popup-cart">
+      <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
+      <p class="popup-cart__description">Товар добавлен в корзину</p>
+      <p class="popup-cart__buttons">
+        <a class="button button-order" href="">Оформить заказ</a>
+        <button class="button button-continue" type="button">
+          Продолжить покупки
+        </button>
+      </p>
+      <button class="button button-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

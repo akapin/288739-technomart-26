@@ -72,14 +72,14 @@
     </header>
 
     <main class="page-content">
-      <h1 class="page-content__header">Техномарт</h1>
+      <h1 class="page-content__header visually-hidden">Техномарт</h1>
 
       <section class="page-content__popular-sections popular-sections">
-        <h2 class="popular-sections__title">
+        <h2 class="popular-sections__title visually-hidden">
           Популярные разделы сайта
         </h2>
         <div class="popular-sections__tools-slider tools-slider">
-          <h3 class="tools-slider__title">Типы инструментов</h3>
+          <h3 class="tools-slider__title visually-hidden">Типы инструментов</h3>
 
           <div class="tools-slider__items">
             <div class="tools-slide tools-slide--1">
@@ -613,5 +613,54 @@
         </a>
       </p>
     </footer>
+
+    <section class="popup popup-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img
+        class="popup-map__image"
+        src="img/map-popup.png"
+        width="940"
+        height="447"
+        alt="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"
+      />
+      <button class="button button-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="popup popup-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form
+        class="popup-write-us__form"
+        method="post"
+        action="https://echo.htmlacademy.ru"
+      >
+        <label class="popup-write-us__label" for="username">Ваше имя:</label>
+        <input
+          class="popup-write-us__input"
+          id="username"
+          type="text"
+          name="username"
+          placeholder="Имя Фамилия"
+        />
+        <label class="popup-write-us__label" for="email">Ваш e-mail:</label>
+        <input
+          class="popup-write-us__input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="email@example.com"
+        />
+        <label class="popup-write-us__label" for="message">Текст письма:</label>
+        <textarea
+          class="popup-write-us__textarea"
+          class=""
+          id="message"
+          type="email"
+          name="message"
+          placeholder="В свободной форме"
+        ></textarea>
+        <button class="button button-write-us" type="submit">Отправить</button>
+      </form>
+      <button class="button button-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
