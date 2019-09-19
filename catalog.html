@@ -106,10 +106,38 @@
         >
           <fieldset>
             <legend>Цена:</legend>
-            <p class="price-filter__slider"></p>
+            <label class="visually-hidden" for="price-filter__slider">
+              Фильтр цены
+            </label>
+            <input
+              class="price-filter__slider"
+              type="range"
+              id="price-filter__slider"
+              name="price-filter"
+              min="0"
+              max="3000"
+              value="0"
+            />
             <p class="price-filter__range-input range-input">
-              <span class="range-input__min">0</span> -
-              <span class="range-input__max">3000</span>
+              <label class="visually-hidden" for="range-input__min">
+                Минимальная цена
+              </label>
+              <input
+                class="range-input__min"
+                id="range-input__min"
+                type="number"
+                value="0"
+              />
+              <span>-</span>
+              <label class="visually-hidden" for="range-input__max">
+                Максимальная цена
+              </label>
+              <input
+                class="range-input__max"
+                id="range-input__max"
+                type="number"
+                value="3000"
+              />
             </p>
           </fieldset>
           <fieldset>
@@ -201,7 +229,11 @@
 
       <section class="page-content__product-sort product-sort">
         <h2 class="product-sort__title">Сортировка:</h2>
-        <form class="product-sort__options sort-options">
+        <form
+          class="product-sort__options sort-options"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+        >
           <input
             class="sort-options__input sort-options__input--active"
             type="radio"
