@@ -3,29 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="page-header">
-      <p class="page-header__company-logo company-logo">
-        <a class="company-logo__link">Техномарт</a>
-      </p>
+      <div class="page-header__topbar">
+        <p class="page-header__company-logo company-logo">
+          <a class="company-logo__link">Техномарт</a>
+        </p>
+
+        <p class="page-header__search">Поиск:</p>
+
+        <p class="page-header__bookmarks bookmarks">
+          <a class="bookmarks__link" href="">Закладки: <span>0</span></a>
+        </p>
+
+        <p class="page-header__cart cart">
+          <a class="cart__link" href="">Корзина: <span>0</span></a>
+        </p>
+
+        <p class="page-header__order order">
+          <a class="order__link" href="">Оформить заказ</a>
+        </p>
+      </div>
 
       <p class="page-header__description">
         Интернет-магазин строительных материалов и инструментов для ремонта
-      </p>
-
-      <p class="page-header__search">Поиск:</p>
-
-      <p class="page-header__bookmarks bookmarks">
-        <a class="bookmarks__link" href="">Закладки: <span>0</span></a>
-      </p>
-
-      <p class="page-header__cart cart">
-        <a class="cart__link" href="">Корзина: <span>0</span></a>
-      </p>
-
-      <p class="page-header__order order">
-        <a class="order__link" href="">Оформить заказ</a>
       </p>
 
       <div class="page-header__company-info company-info">
@@ -579,39 +587,41 @@
         </li>
       </ul>
 
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">© 2010–2019 Компания «Техномарт»</p>
-        <p class="copyright__text">Все права защищены</p>
+      <div class="page-footer__bottom-bar">
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">© 2010–2019 Компания «Техномарт»</p>
+          <p class="copyright__text">Все права защищены</p>
+        </div>
+
+        <ul class="page-footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="">Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="">Фейсбук</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="">Инстаграм</a>
+          </li>
+        </ul>
+
+        <p class="page-footer__feedback feedback">
+          Обратная связь:
+          <a class="feedback__email" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </p>
+
+        <p class="page-footer__site-developer site-developer">
+          Разработано -
+          <a
+            class="site-developer__link"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+          >
+            htmlacademy.ru
+          </a>
+        </p>
       </div>
-
-      <ul class="page-footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="">Вконтакте</a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="">Фейсбук</a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="">Инстаграм</a>
-        </li>
-      </ul>
-
-      <p class="page-footer__feedback feedback">
-        Обратная связь:
-        <a class="feedback__email" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
-      </p>
-
-      <p class="page-footer__site-developer site-developer">
-        Разработано -
-        <a
-          class="site-developer__link"
-          href="https://htmlacademy.ru/intensive/htmlcss"
-        >
-          htmlacademy.ru
-        </a>
-      </p>
     </footer>
 
     <section class="popup popup-map">
