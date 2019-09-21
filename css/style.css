@@ -39,7 +39,6 @@ a {
 .button--white {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  color: #000000;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
@@ -261,7 +260,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-content__breadcrumbs {
   margin: 0;
   padding: 0;
-  color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -283,7 +281,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-content__product-filters {
   font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
   text-transform: uppercase;
   list-style: none;
 }
