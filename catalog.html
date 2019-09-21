@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -17,14 +21,24 @@
           <a class="company-logo__link" href="index.html">Техномарт</a>
         </p>
 
-        <p class="page-header__search">Поиск:</p>
+        <p class="page-header__search search">
+          <input
+            class="search__input"
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Поиск:"
+          />
+        </p>
 
         <p class="page-header__bookmarks bookmarks">
           <a class="bookmarks__link" href="">Закладки: <span>0</span></a>
         </p>
 
         <p class="page-header__cart cart">
-          <a class="cart__link" href="">Корзина: <span>10</span></a>
+          <a class="cart__link cart__link--has-items" href=""
+            >Корзина: <span>10</span></a
+          >
         </p>
 
         <p class="page-header__order order">
@@ -44,12 +58,14 @@
       </div>
 
       <div class="page-header__user user">
-        <p class="user__username username">
-          <a class="username__link" href="">Равшан Джамшутович</a>
-        </p>
-        <p class="user__logout logout">
-          <a class="logout__link" href="">Выйти</a>
-        </p>
+        <div>
+          <p class="user__username username">
+            <a class="username__link" href="">Равшан Джамшутович</a>
+          </p>
+          <p class="user__logout logout">
+            <a class="logout__link" href="">Выйти</a>
+          </p>
+        </div>
         <p class="user__user-orders user-orders">
           <a class="user-orders__link" href="">Мои заказы</a>
         </p>
@@ -229,7 +245,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button product-filters__button" type="submit">
+          <button
+            class="button button--white product-filters__button"
+            type="submit"
+          >
             Показать
           </button>
         </form>

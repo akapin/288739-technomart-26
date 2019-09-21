@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -17,7 +21,15 @@
           <a class="company-logo__link">Техномарт</a>
         </p>
 
-        <p class="page-header__search">Поиск:</p>
+        <p class="page-header__search search">
+          <input
+            class="search__input"
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Поиск:"
+          />
+        </p>
 
         <p class="page-header__bookmarks bookmarks">
           <a class="bookmarks__link" href="">Закладки: <span>0</span></a>
@@ -510,7 +522,7 @@
             ЖелДорЭкспедиция
           </li>
         </ul>
-        <button class="button company-desc__button" type="button">
+        <button class="button button--red company-desc__button" type="button">
           Подробнее о компании
         </button>
       </section>
@@ -532,7 +544,7 @@
             alt="Карта"
           />
         </a>
-        <button class="button company-contacts__button" type="button">
+        <button class="button button--red company-contacts__button" type="button">
           Заблудились? Напишите нам!
         </button>
       </section>
