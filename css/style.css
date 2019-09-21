@@ -32,16 +32,16 @@ a {
 }
 
 .button--red {
-  color: white;
+  color: #ffffff;
   background-color: #ee3643;
 }
 
 .button--white {
-  color: black;
-  background-color: white;
-  border: 1px solid #e5e5e5;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 
 .button--red:hover {
@@ -59,19 +59,19 @@ a {
 }
 
 .page-header__topbar {
-  color: white;
   font-size: 17px;
+  color: #ffffff;
   line-height: 18px;
   background-color: #293449;
 }
 
 .page-header__company-logo {
   margin: 0;
-  font-size: 22px;
   line-height: 47px;
+  font-size: 22px;
+  text-transform: uppercase;
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ a {
 }
 
 .search__input {
-  color: white;
+  color: #ffffff;
   background-color: #293449;
   border-style: none;
 }
@@ -98,12 +98,12 @@ a {
 }
 
 .search__input::placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .search__input:focus {
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /* clears the 'X' from Chrome */
@@ -152,15 +152,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-header__description {
-  font-size: 16px;
   line-height: 23px;
-  font-style: italic;
+  font-size: 16px;
   color: #ee3643;
+  font-style: italic;
 }
 
 .page-header__company-info .company-info__phone {
-  color: #ee3643;
   font-size: 21px;
+  color: #ee3643;
   line-height: 21px;
   border: 3px solid #ffffff;
 }
@@ -178,7 +178,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-header__user a:active {
-  color: black;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -186,8 +186,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .signup__link,
 .username__link,
 .logout__link {
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .login__link:hover,
@@ -198,7 +198,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user div {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .user-orders__link,
@@ -211,11 +211,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-header__topbar a,
 .page-header__header-navbar a {
-  color: white;
+  color: #ffffff;
 }
 
 .page-header__header-navbar {
-  color: white;
+  color: #ffffff;
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
@@ -261,7 +261,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-content__breadcrumbs {
   margin: 0;
   padding: 0;
-  color: black;
+  color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -270,7 +270,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-content__breadcrumbs a {
-  color: black;
+  color: #000000;
 }
 
 .page-content__header {
@@ -283,7 +283,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-content__product-filters {
   font-family: "PT Sans", Arial, sans-serif;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
   list-style: none;
 }
@@ -330,7 +330,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__title {
-  color: black;
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -345,7 +345,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__new-price {
-  color: white;
+  color: #ffffff;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -358,7 +358,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__button-buy {
-  color: white;
+  color: #ffffff;
   box-shadow: inset 0 -3px 0 #367315;
   background-color: #63a63e;
 }
@@ -375,7 +375,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .product__button-bookmarks {
   color: #32425c;
   border: 3px solid #63a63e;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .product__button-bookmarks:hover {
@@ -391,11 +391,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-footer {
   background-color: #32425c;
-  color: white;
+  color: #ffffff;
 }
 
 .page-footer a {
-  color: white;
+  color: #ffffff;
 }
 
 .page-footer a:hover {
@@ -410,9 +410,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-footer__company-logo {
   font-size: 30px;
   line-height: 68px;
+  text-transform: uppercase;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
