@@ -51,6 +51,19 @@ a {
   background-color: #ba2732;
 }
 
+.button--grey {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button--grey:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button--grey:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Header */
 
 .page-header {
@@ -243,6 +256,57 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* Main */
 
+.tools-slide__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.tools-slide__description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popular-sections__materials-section {
+  background-color: #ffbf47;
+}
+
+.popular-sections__tools-section {
+  background-color: #3bbce3;
+}
+
+.popular-sections__equipment-section {
+  background-color: #dc91d8;
+}
+
+.popular-sections__discounts-section {
+  background-color: #8ed78f;
+}
+
+.popular-sections__shipment-section {
+  background-color: #ffc047;
+}
+
+.page-content__company-services {
+  background-color: #f3f7f9;
+}
+
+.popular-sections__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.popular-products__title,
+.popular-manufacturers__title {
+  color: #32425c;
+}
+
+.popular-products__title,
+.popular-manufacturers__title,
+.company-services__title,
 .company-desc__title,
 .company-contacts__title {
   font-size: 30px;
@@ -250,11 +314,60 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
 }
 
+.popular-products__top-bar,
+.popular-manufacturers__top-bar {
+  background-color: #f9f5f0;
+}
+
+.popular-products__list,
+.popular-manufacturers__list,
+.services-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.company-desc__title,
+.company-contacts__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-services__description,
+.services-slide__description,
 .company-desc__description,
 .company-contacts__description {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.services-slider__bullet {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #32425c;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+}
+
+.services-slider__bullet:hover {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.services-slider__bullet--active {
+  color: #32425c;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+}
+
+.services-slide__title {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .company-desc__transport-company-list {
@@ -327,8 +440,15 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 1px solid #e5e5e5;
 }
 
+.popular-products__product:hover,
+.popular-manufacturers__image:hover,
 .catalog__product:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.popular-manufacturers__image:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 .product__title {
@@ -387,6 +507,54 @@ input[type="search"]::-webkit-search-results-decoration {
 .product__button-bookmarks:active {
   border: 3px solid #32425c;
   opacity: 0.3;
+}
+
+.product-filters__title,
+.product-sort__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-filters__title,
+.price-filter__slider,
+.page-content__product-sort {
+  background-color: #f7f3ec;
+}
+
+.range-input__min,
+.range-input__max {
+  background-color: #f7f3ec;
+  border-style: none;
+}
+
+.page-content__product-sort {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-options__label {
+  opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
+}
+
+.sort-options__label:hover {
+  opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
+}
+
+.sort-options__label--active {
+  color: #ee3643;
+  text-decoration: none;
+  opacity: 1;
 }
 
 /* Footer */

@@ -162,47 +162,47 @@
           <button class="button tools-slider__button-previous" type="button">
             Назад
           </button>
-          <a class="button tools-slider__link" href="catalog.html">
+          <a class="button button--red tools-slider__link" href="catalog.html">
             Открыть каталог
           </a>
         </div>
         <div class="popular-sections__materials-section materials-section">
-          <h3 class="materials-section__title">
+          <h3 class="popular-sections__title materials-section__title">
             Материалы
           </h3>
-          <a class="button materials-section__link" href="">
+          <a class="button button--grey materials-section__link" href="">
             На любой вкус
           </a>
         </div>
         <div class="popular-sections__tools-section tools-section">
-          <h3 class="tools-section__title">
+          <h3 class="popular-sections__title tools-section__title">
             Инструмент
           </h3>
-          <a class="button tools-section__link" href="">
+          <a class="button button--grey tools-section__link" href="">
             На все случаи
           </a>
         </div>
         <div class="popular-sections__equipment-section equipment-section">
-          <h3 class="equipment-section__title">
+          <h3 class="popular-sections__title equipment-section__title">
             Техника
           </h3>
-          <a class="button equipment-section__link" href="">
+          <a class="button button--grey equipment-section__link" href="">
             Для стройки
           </a>
         </div>
         <div class="popular-sections__discounts-section discounts-section">
-          <h3 class="discounts-section__title">
+          <h3 class="popular-sections__title discounts-section__title">
             Скидки 50%
           </h3>
-          <a class="button discounts-section__link" href="">
+          <a class="button button--grey discounts-section__link" href="">
             На 350 товаров
           </a>
         </div>
         <div class="popular-sections__shipment-section shipment-section">
-          <h3 class="shipment-section__title">
+          <h3 class="popular-sections__title shipment-section__title">
             Доставка
           </h3>
-          <a class="button shipment-section__link" href="">
+          <a class="button button--grey shipment-section__link" href="">
             Бесплатно
           </a>
         </div>
@@ -213,7 +213,7 @@
           <h2 class="popular-products__title">
             Популярные товары:
           </h2>
-          <a class="button popular-products__button" href="">
+          <a class="button button--red popular-products__button" href="">
             Все популярные товары
           </a>
         </div>
@@ -318,7 +318,7 @@
           <h2 class="popular-manufacturers__title">
             Популярные производители:
           </h2>
-          <a class="button popular-manufacturers__button" href="">
+          <a class="button button--red popular-manufacturers__button" href="">
             Все производители
           </a>
         </div>
@@ -425,45 +425,53 @@
         </p>
 
         <div class="company-services__services-slider services-slider">
-          <input
-            type="radio"
-            name="services-slider"
-            id="services-slide-1"
-            class="services-slider__radio"
-            checked
-          />
-          <label
-            for="services-slide-1"
-            class="services-slider__bullet services-slider__bullet--1"
-          >
-            Доставка
-          </label>
-          <input
-            type="radio"
-            name="services-slider"
-            id="services-slide-2"
-            class="services-slider__radio"
-          />
-          <label
-            for="services-slide-2"
-            class="services-slider__bullet services-slider__bullet--2"
-          >
-            Гарантия
-          </label>
-          <input
-            type="radio"
-            name="services-slider"
-            id="services-slide-3"
-            class="services-slider__radio"
-          />
-          <label
-            for="services-slide-3"
-            class="services-slider__bullet services-slider__bullet--3"
-          >
-            Кредит
-          </label>
+          <ul class="services-slider__list">
+            <li class="services-slider__bullet services-slider__bullet--active">
+              <input
+                type="radio"
+                name="services-slider"
+                id="services-slide-1"
+                class="visually-hidden services-slider__radio"
+                checked
+              />
+              <label
+                for="services-slide-1"
+                class="services-slider__label services-slider__label--1"
+              >
+                Доставка
+              </label>
+            </li>
+            <li class="services-slider__bullet">
+              <input
+                type="radio"
+                name="services-slider"
+                id="services-slide-2"
+                class="visually-hidden services-slider__radio"
+              />
+              <label
+                for="services-slide-2"
+                class="services-slider__label services-slider__label--2"
+              >
+                Гарантия
+              </label>
+            </li>
+            <li class="services-slider__bullet">
+              <input
+                type="radio"
+                name="services-slider"
+                id="services-slide-3"
+                class="visually-hidden services-slider__radio"
+              />
+              <label
+                for="services-slide-3"
+                class="services-slider__label services-slider__label--3"
+              >
+                Кредит
+              </label>
+            </li>
+          </ul>
 
-          <div class="services-slider__items">
+          <div class="services-slider__content">
             <div class="services-slide services-slide--1">
               <h3 class="services-slide__title">
                 Доставка
@@ -495,7 +503,7 @@
                 Залезть в долговую яму стало проще! Кредитные консультанты
                 придут вам на помощь.
               </p>
-              <a class="button services-slide__button" href="">
+              <a class="button button--red services-slide__button" href="">
                 Отправить заявку
               </a>
             </div>
