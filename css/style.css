@@ -82,7 +82,12 @@ a {
   background-color: #ba2732;
 }
 
+.page-header__search {
+  line-height: 18px;
+}
+
 .search__input {
+  line-height: 18px;
   color: #ffffff;
   background-color: #293449;
   border-style: none;
@@ -334,7 +339,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__old-price {
-  color: #a9a9a9;
+  color: #999999;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
