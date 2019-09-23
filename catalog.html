@@ -172,53 +172,58 @@
             <ul>
               <li>
                 <input
+                  class="filters-input"
                   type="checkbox"
                   name="filter-price-bosch"
                   id="filter-price-bosch"
                   checked
                 />
-                <label for="filter-price-bosch">
+                <label class="filters-label" for="filter-price-bosch">
                   Bosch
                 </label>
               </li>
               <li>
                 <input
+                  class="filters-input"
                   type="checkbox"
                   name="filter-price-interskol"
                   id="filter-price-interskol"
                 />
-                <label for="filter-price-interskol">
+                <label class="filters-label" for="filter-price-interskol">
                   Интерскол
                 </label>
               </li>
               <li>
                 <input
+                  class="filters-input"
                   type="checkbox"
                   name="filter-price-makita"
                   id="filter-price-makita"
                   checked
                 />
-                <label for="filter-price-makita">
+                <label class="filters-label" for="filter-price-makita">
                   Makita
                 </label>
               </li>
               <li>
                 <input
+                  class="filters-input"
                   type="checkbox"
                   name="filter-price-dewalt"
                   id="filter-price-dewalt"
                 />
-                <label for="filter-price-dewalt">
+                <label class="filters-label" for="filter-price-dewalt">
                   Dewalt
                 </label>
               </li>
               <li>
                 <input
+                  class="filters-input"
                   type="checkbox"
                   name="filter-price-hitachi"
                   id="filter-price-hitachi"
                 />
-                <label for="filter-price-hitachi">
+                <label class="filters-label" for="filter-price-hitachi">
                   Hitachi
                 </label>
               </li>
@@ -229,22 +234,24 @@
             <ul>
               <li>
                 <input
+                  class="filters-input"
                   type="radio"
                   name="filter-power"
                   value="secondary"
                   id="filter-power-secondary"
                   checked
                 />
-                <label for="filter-power-secondary">Аккумуляторные</label>
+                <label class="filters-label" for="filter-power-secondary">Аккумуляторные</label>
               </li>
               <li>
                 <input
+                  class="filters-input"
                   type="radio"
                   name="filter-power"
                   value="primary"
                   id="filter-power-primary"
                 />
-                <label for="filter-power-primary">Сетевые</label>
+                <label class="filters-label" for="filter-power-primary">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -562,10 +569,10 @@
         </ul>
 
         <ul class="catalog__pagination pagination">
-          <li class="pagination__item">
+          <li class="pagination__item visually-hidden">
             <a class="button pagination__link" href="">Предыдущая</a>
           </li>
-          <li class="button pagination__item pagination__item--active">1</li>
+          <li class="button pagination__item"><span class="button pagination__link pagination__link--active">1</span></li>
           <li class="pagination__item">
             <a class="button pagination__link" href="">2</a>
           </li>

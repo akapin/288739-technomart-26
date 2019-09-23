@@ -308,7 +308,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-manufacturers__title,
 .company-services__title,
 .company-desc__title,
-.company-contacts__title {
+.company-contacts__title,
+.product-desc__title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -337,7 +338,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .company-services__description,
 .services-slide__description,
 .company-desc__description,
-.company-contacts__description {
+.company-contacts__description,
+.product-desc__description {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -415,6 +417,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-content__product-filters fieldset {
+  padding: 0;
   border: 0;
 }
 
@@ -530,31 +533,76 @@ input[type="search"]::-webkit-search-results-decoration {
   border-style: none;
 }
 
+.filters-input:disabled + .filters-label {
+  opacity: 0.4;
+}
+
 .page-content__product-sort {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .sort-options__label {
-  opacity: 0.3;
+  color: #000000;
   text-decoration: underline;
   text-decoration-color: #ee3643;
   text-decoration-style: dotted;
+  opacity: 0.3;
 }
 
 .sort-options__label:hover {
-  opacity: 0.3;
+  color: #000000;
   text-decoration: underline;
   text-decoration-color: #ee3643;
-  text-decoration-style: dotted;
+  text-decoration-style: line;
+  opacity: 1;
 }
 
 .sort-options__label--active {
   color: #ee3643;
   text-decoration: none;
   opacity: 1;
+}
+
+.catalog__pagination {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  list-style: none;
+}
+
+.pagination__link {
+  font-size: 13px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination__link:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #bdc6ca;
+}
+
+.pagination__link:active {
+  background-color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+.pagination__link--active {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+}
+
+.page-content__product-desc {
+  background-color: #f2f6f8;
+  border: 1px solid transparent;
+}
+
+.product-desc__description {
+  margin: 0;
 }
 
 /* Footer */
@@ -578,6 +626,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer__company-logo {
+  margin: 0;
   font-size: 30px;
   line-height: 68px;
   text-transform: uppercase;
