@@ -175,10 +175,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #161d29;
 }
 
-.page-header__bookmarks {
-  margin-left: auto;
-}
-
 .bookmarks__link,
 .cart__link,
 .order__link {
@@ -199,10 +195,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-header__search,
-.page-header__bookmarks,
 .page-header__cart,
 .page-header__order {
   margin: 0;
+}
+
+.page-header__bookmarks {
+  margin: 0;
+  margin-left: auto;
 }
 
 .page-header__info {
