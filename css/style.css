@@ -750,26 +750,26 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .sort-options__label {
   color: #000000;
-
   text-decoration: underline;
   text-decoration-color: #ee3643;
   text-decoration-style: dotted;
+
   opacity: 0.3;
 }
 
 .sort-options__label:hover {
   color: #000000;
-
   text-decoration: underline;
   text-decoration-color: #ee3643;
   text-decoration-style: line;
+
   opacity: 1;
 }
 
 .sort-options__label--active {
   color: #ee3643;
-
   text-decoration: none;
+
   opacity: 1;
 }
 
@@ -822,8 +822,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Footer */
 
 .page-footer {
-  background-color: #32425c;
   color: #ffffff;
+  background-color: #32425c;
 }
 
 .page-footer a {
