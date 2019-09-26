@@ -29,9 +29,9 @@ a {
   position: absolute;
   clip: rect(0 0 0 0);
 
+  margin: -1px;
   width: 1px;
   height: 1px;
-  margin: -1px;
 }
 
 .button {
@@ -94,13 +94,13 @@ a {
 
 .topbar__info-wrapper {
   display: flex;
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 }
 
 .page-header__company-logo {
-  width: 220px;
   margin: 0;
+  width: 220px;
 
   font-size: 22px;
   line-height: 42px;
@@ -208,14 +208,14 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-header__info {
   display: flex;
   justify-content: space-between;
-  width: 940px;
   margin: 54px auto 44px;
+  width: 940px;
 }
 
 .page-header__description {
-  width: 196px;
   margin: 0;
   margin-left: 53px;
+  width: 196px;
 
   font-size: 16px;
   font-style: italic;
@@ -307,8 +307,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-header__header-navbar {
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 
   color: #ffffff;
   font-size: 17px;
@@ -349,8 +349,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .product-desc__wrapper {
   display: flex;
   flex-direction: column;
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 }
 
 .tools-slide__title {
@@ -604,8 +604,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog__product {
   display: flex;
   flex-direction: column;
-  width: 220px;
   margin-top: 21px;
+  width: 220px;
 
   border: 1px solid #e5e5e5;
 }
@@ -638,9 +638,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__title {
-  width: 155px;
   margin: auto;
   margin-top: 12px;
+  width: 155px;
 
   text-align: center;
   color: #000000;
@@ -650,8 +650,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__old-price {
-  width: 141px;
   margin: 13px auto;
+  width: 141px;
 
   text-align: center;
   color: #999999;
@@ -662,9 +662,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product__new-price {
-  width: 141px;
   margin: auto;
   margin-bottom: 21px;
+  width: 141px;
 
   text-align: center;
   color: #ffffff;
@@ -683,6 +683,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .product__button-buy {
   width: 135px;
+
   color: #ffffff;
 
   box-shadow: inset 0 -3px 0 #367315;
@@ -846,8 +847,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-footer__top-bar,
 .page-footer__wrapper {
   display: flex;
-  width: 940px;
   margin: 0 auto;
+  width: 940px;
 }
 
 .page-footer__column {
@@ -865,8 +866,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer__company-logo {
-  width: 220px;
   margin: 0;
+  width: 220px;
 
   font-size: 30px;
   line-height: 68px;
@@ -895,8 +896,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer__company-info {
-  width: 323px;
   margin-top: 32px;
+  width: 323px;
 }
 
 .page-footer__company-info .company-info__address,
@@ -977,11 +978,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 132px;
   padding: 0;
   margin: 0;
   margin-left: 161px;
   margin-right: 119px;
+  width: 132px;
 
   list-style: none;
 }
@@ -1011,17 +1012,17 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer__feedback {
-  width: 135px;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 53px;
+  width: 135px;
 }
 
 .page-footer__site-developer {
-  width: 96px;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 15px;
+  width: 96px;
 }
 
 .page-footer__feedback a:active,
