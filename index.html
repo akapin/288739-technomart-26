@@ -107,118 +107,128 @@
           <h2 class="popular-sections__title visually-hidden">
             Популярные разделы сайта
           </h2>
-          <div class="popular-sections__tools-slider tools-slider">
-            <h3 class="tools-slider__title visually-hidden">
-              Типы инструментов
-            </h3>
 
-            <div class="tools-slider__items">
-              <div class="tools-slide tools-slide--1">
-                <img
-                  class="tools-slide__image"
-                  src="img/drills.jpg"
-                  width="620"
-                  height="266"
-                  alt="Дрели"
-                />
-                <h3 class="tools-slide__title">Дрели</h3>
-                <p class="tools-slide__description">Соседям на радость!</p>
-              </div>
-
-              <div class="tools-slide tools-slide--2">
-                <img
-                  class="tools-slide__image"
-                  src="img/perforators.jpg"
-                  width="620"
-                  height="266"
-                  alt="Перфораторы"
-                />
-                <h3 class="tools-slide__title">Перфораторы</h3>
-                <p class="tools-slide__description">
-                  Настоящие мужские игрушки
-                </p>
-              </div>
+          <div class="popular-sections__column">
+            <div class="popular-sections__materials-section materials-section">
+              <h3 class="popular-sections__title materials-section__title">
+                Материалы
+              </h3>
+              <a class="button button--grey materials-section__link" href="">
+                На любой вкус
+              </a>
             </div>
+            <div class="popular-sections__tools-section tools-section">
+              <h3 class="popular-sections__title tools-section__title">
+                Инструмент
+              </h3>
+              <a class="button button--grey tools-section__link" href="">
+                На все случаи
+              </a>
+            </div>
+            <div class="popular-sections__tools-slider tools-slider">
+              <h3 class="tools-slider__title visually-hidden">
+                Типы инструментов
+              </h3>
 
-            <input
-              type="radio"
-              name="tools-slider"
-              id="tools-drills-radio"
-              class="tools-slider__radio"
-              checked
-            />
-            <label
-              for="tools-drills-radio"
-              class="tools-slider__bullet tools-slider__bullet--1"
-            >
-              Дрели
-            </label>
-            <input
-              type="radio"
-              name="tools-slider"
-              id="tools-perforators-radio"
-              class="tools-slider__radio"
-            />
-            <label
-              for="tools-perforators-radio"
-              class="tools-slider__bullet tools-slider__bullet--2"
-            >
-              Перфораторы
-            </label>
+              <div class="tools-slider__items">
+                <div class="tools-slide tools-slide--1">
+                  <img
+                    class="tools-slide__image"
+                    src="img/drills.jpg"
+                    width="620"
+                    height="266"
+                    alt="Дрели"
+                  />
+                  <h3 class="tools-slide__title">Дрели</h3>
+                  <p class="tools-slide__description">Соседям на радость!</p>
+                </div>
 
-            <button class="button tools-slider__button-next" type="button">
-              Вперед
-            </button>
-            <button class="button tools-slider__button-previous" type="button">
-              Назад
-            </button>
-            <a
-              class="button button--red tools-slider__link"
-              href="catalog.html"
-            >
-              Открыть каталог
-            </a>
+                <div class="tools-slide tools-slide--2">
+                  <img
+                    class="tools-slide__image"
+                    src="img/perforators.jpg"
+                    width="620"
+                    height="266"
+                    alt="Перфораторы"
+                  />
+                  <h3 class="tools-slide__title">Перфораторы</h3>
+                  <p class="tools-slide__description">
+                    Настоящие мужские игрушки
+                  </p>
+                </div>
+              </div>
+
+              <div class="tools-slider__bullets">
+                <input
+                  type="radio"
+                  name="tools-slider"
+                  id="tools-drills-radio"
+                  class="tools-slider__radio"
+                  checked
+                />
+                <label
+                  for="tools-drills-radio"
+                  class="tools-slider__bullet tools-slider__bullet--1 visually-hidden"
+                >
+                  Дрели
+                </label>
+                <input
+                  type="radio"
+                  name="tools-slider"
+                  id="tools-perforators-radio"
+                  class="tools-slider__radio"
+                />
+                <label
+                  for="tools-perforators-radio"
+                  class="tools-slider__bullet tools-slider__bullet--2 visually-hidden"
+                >
+                  Перфораторы
+                </label>
+              </div>
+              
+
+              <button class="button tools-slider__button-next" type="button">
+                Вперед
+              </button>
+              <button class="button tools-slider__button-previous" type="button">
+                Назад
+              </button>
+              <a
+                class="button button--red tools-slider__link"
+                href="catalog.html"
+              >
+                Открыть каталог
+              </a>
+            </div>
           </div>
-          <div class="popular-sections__materials-section materials-section">
-            <h3 class="popular-sections__title materials-section__title">
-              Материалы
-            </h3>
-            <a class="button button--grey materials-section__link" href="">
-              На любой вкус
-            </a>
+
+          <div class="popular-sections__column">
+            <div class="popular-sections__equipment-section equipment-section">
+              <h3 class="popular-sections__title equipment-section__title">
+                Техника
+              </h3>
+              <a class="button button--grey equipment-section__link" href="">
+                Для стройки
+              </a>
+            </div>
+            <div class="popular-sections__discounts-section discounts-section">
+              <h3 class="popular-sections__title discounts-section__title">
+                Скидки 50%
+              </h3>
+              <a class="button button--grey discounts-section__link" href="">
+                На 350 товаров
+              </a>
+            </div>
+            <div class="popular-sections__shipment-section shipment-section">
+              <h3 class="popular-sections__title shipment-section__title">
+                Доставка
+              </h3>
+              <a class="button button--grey shipment-section__link" href="">
+                Бесплатно
+              </a>
+            </div>
           </div>
-          <div class="popular-sections__tools-section tools-section">
-            <h3 class="popular-sections__title tools-section__title">
-              Инструмент
-            </h3>
-            <a class="button button--grey tools-section__link" href="">
-              На все случаи
-            </a>
-          </div>
-          <div class="popular-sections__equipment-section equipment-section">
-            <h3 class="popular-sections__title equipment-section__title">
-              Техника
-            </h3>
-            <a class="button button--grey equipment-section__link" href="">
-              Для стройки
-            </a>
-          </div>
-          <div class="popular-sections__discounts-section discounts-section">
-            <h3 class="popular-sections__title discounts-section__title">
-              Скидки 50%
-            </h3>
-            <a class="button button--grey discounts-section__link" href="">
-              На 350 товаров
-            </a>
-          </div>
-          <div class="popular-sections__shipment-section shipment-section">
-            <h3 class="popular-sections__title shipment-section__title">
-              Доставка
-            </h3>
-            <a class="button button--grey shipment-section__link" href="">
-              Бесплатно
-            </a>
-          </div>
+
         </section>
 
         <section class="page-content__popular-products popular-products">
@@ -399,7 +409,9 @@
             </li>
           </ul>
         </section>
+      </div>
 
+      <div class="page-content__services-wrapper">
         <section class="page-content__company-services company-services">
           <h2 class="company-services__title">Сервисы</h2>
           <p class="company-services__description">
@@ -497,7 +509,9 @@
             </div>
           </div>
         </section>
+      </div>
 
+      <div class="page-content__wrapper">
         <div class="page-content__sections-wrapper">
           <section class="page-content__company-desc company-desc">
             <h2 class="company-desc__title">Компания «Техномарт»</h2>
@@ -557,6 +571,7 @@
           </section>
         </div>
       </div>
+      
     </main>
 
     <footer class="page-footer">
