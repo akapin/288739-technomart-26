@@ -28,7 +28,7 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
 
   margin: -1px;
   width: 1px;
@@ -455,7 +455,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-sections__column:nth-of-type(2) {
   display: flex;
   flex-direction: column;
-  width: 300x;
+  width: 300px;
 }
 
 .popular-sections__tools-slider {
@@ -1035,7 +1035,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: #ee3643;
-  text-decoration-style: line;
+  text-decoration-style: solid;
 
   opacity: 1;
 }
