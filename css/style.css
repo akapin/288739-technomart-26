@@ -397,13 +397,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-navbar__item {
   flex-grow: 1;
-  padding: 21px 0 22px;
-
   text-align: center;
 }
 
 .header-navbar__item:hover {
   background-color: #293449;
+}
+
+.header-navbar__link {
+  display: block;
+  padding: 21px 0 22px;
 }
 
 .header-navbar__link:active {
@@ -593,7 +596,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -603,8 +605,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .popular-products__product {
+  margin-right: 20px;
   margin-bottom: 21px;
   border: 1px solid #eaeaea;
+}
+
+.popular-products__product:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-products__product:hover {
@@ -682,7 +689,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-manufacturers__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   margin-bottom: 85px;
   padding: 0;
@@ -692,6 +698,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .popular-manufacturers__item {
   margin-bottom: 18px;
+  margin-right: 20px;
+}
+
+.popular-manufacturers__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-manufacturers__image:hover {
@@ -727,6 +738,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .company-services__description {
   margin: 0;
+  width: 398px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1049,7 +1062,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 53px;
@@ -1064,9 +1076,14 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
   margin-top: 21px;
+  margin-right: 20px;
   width: 220px;
 
   border: 1px solid #e5e5e5;
+}
+
+.catalog__product:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog__product:hover {
