@@ -739,42 +739,70 @@
         height="447"
         alt="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"
       />
-      <button class="button button-close" type="button">Закрыть</button>
+      <button class="button button-close" type="button">
+        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+          7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+          7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+          1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
     <section class="popup popup-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form
-        class="popup-write-us__form"
+        class="popup-write-us__write-us-form write-us-form"
         method="post"
         action="https://echo.htmlacademy.ru"
       >
-        <label class="popup-write-us__label" for="username">Ваше имя:</label>
-        <input
-          class="popup-write-us__input"
-          id="username"
-          type="text"
-          name="username"
-          placeholder="Имя Фамилия"
-        />
-        <label class="popup-write-us__label" for="email">Ваш e-mail:</label>
-        <input
-          class="popup-write-us__input"
-          id="email"
-          type="email"
-          name="email"
-          placeholder="email@example.com"
-        />
-        <label class="popup-write-us__label" for="message">Текст письма:</label>
-        <textarea
-          class="popup-write-us__textarea"
-          id="message"
-          name="message"
-          placeholder="В свободной форме"
-        ></textarea>
-        <button class="button button-write-us" type="submit">Отправить</button>
+        <div class="write-us-form__wrapper">
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="username">Ваше имя:</label>
+            <input
+              class="write-us-form__input"
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Имя Фамилия"
+            />
+          </div>
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="email">Ваш e-mail:</label>
+            <input
+              class="write-us-form__input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="message">Текст письма:</label>
+            <textarea
+              class="write-us-form__textarea"
+              id="message"
+              name="message"
+              placeholder="В свободной форме"
+            ></textarea>
+          </div>
+        </div>
+        
+        <div class="write-us-button-wrapper">
+          <button class="button button--red button-write-us" type="submit">Отправить</button>
+        </div>
+        
       </form>
-      <button class="button button-close" type="button">Закрыть</button>
+      <button class="button button-close" type="button">
+        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+          7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+          7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+          1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
