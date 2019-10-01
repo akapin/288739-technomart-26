@@ -1614,14 +1614,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #ba2732;
 }
 
-.page-footer__company-logo a:hover {
-  text-decoration: none;
-}
-
-.page-footer__company-logo a:active {
-  opacity: 1;
-}
-
 .page-footer__company-info {
   margin-top: 28px;
   margin-left: 3px;
@@ -1770,13 +1762,12 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 50%;
 }
 
-.socials__link svg{
+.socials__link svg {
   margin: auto;
 }
 
 .page-footer__feedback {
-  margin-top: 0;
-  margin-bottom: auto;
+  margin: 0;
   margin-right: 53px;
   width: 135px;
 }
@@ -1793,8 +1784,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer__site-developer {
-  margin-top: 0;
-  margin-bottom: auto;
+  margin: 0;
   margin-right: 15px;
   width: 96px;
 }
