@@ -181,7 +181,7 @@
               method="get"
               action="https://echo.htmlacademy.ru"
             >
-              <fieldset>
+              <fieldset class="product-filters__price-fieldset">
                 <legend>Цена:</legend>
                 <div class="price-filter__slider">
                   <label class="visually-hidden" for="price-filter__slider-input">
@@ -220,74 +220,122 @@
                   />
                 </p>
               </fieldset>
-              <fieldset>
+
+              <fieldset  class="product-filters__manufacturers-fieldset">
                 <legend>Производители:</legend>
                 <ul>
                   <li>
+                    
                     <input
-                      class="filters-input"
+                      class="filters-checkbox visually-hidden"
                       type="checkbox"
                       name="filter-price-bosch"
                       id="filter-price-bosch"
                       checked
                     />
                     <label class="filters-label" for="filter-price-bosch">
+                      <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1
+                        1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                        <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                        <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96
+                        2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      </svg>
                       Bosch
                     </label>
                   </li>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-checkbox visually-hidden"
                       type="checkbox"
                       name="filter-price-interskol"
                       id="filter-price-interskol"
                     />
                     <label class="filters-label" for="filter-price-interskol">
+                      <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1
+                        1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                        <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                        <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96
+                        2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      </svg>
                       Интерскол
                     </label>
                   </li>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-checkbox visually-hidden"
                       type="checkbox"
                       name="filter-price-makita"
                       id="filter-price-makita"
                       checked
                     />
                     <label class="filters-label" for="filter-price-makita">
+                      <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1
+                        1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                        <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                        <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96
+                        2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      </svg>
                       Makita
                     </label>
                   </li>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-checkbox visually-hidden"
                       type="checkbox"
                       name="filter-price-dewalt"
                       id="filter-price-dewalt"
                     />
                     <label class="filters-label" for="filter-price-dewalt">
+                      <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1
+                        1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                        <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                        <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96
+                        2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      </svg>
                       Dewalt
                     </label>
                   </li>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-checkbox visually-hidden"
                       type="checkbox"
                       name="filter-price-hitachi"
                       id="filter-price-hitachi"
                     />
                     <label class="filters-label" for="filter-price-hitachi">
+                      <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                        <path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1
+                        1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                      </svg>
+                      <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                        <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                        <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96
+                        2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      </svg>
                       Hitachi
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+
+              <fieldset  class="product-filters__power-fieldset">
                 <legend>Питание:</legend>
                 <ul>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-radio visually-hidden"
                       type="radio"
                       name="filter-power"
                       value="secondary"
@@ -295,18 +343,38 @@
                       checked
                     />
                     <label class="filters-label" for="filter-power-secondary">
+                      <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813
+                        21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25
+                        19.403 25 12.5 19.403 0 12.5 0z"/>
+                      </svg>
+                      <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813
+                        21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25
+                        19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#c5c5c5" cx="12.5" cy="12.5" r="4.5"/>
+                      </svg>
                       Аккумуляторные
                     </label>
                   </li>
                   <li>
                     <input
-                      class="filters-input"
+                      class="filters-radio visually-hidden"
                       type="radio"
                       name="filter-power"
                       value="primary"
                       id="filter-power-primary"
                     />
                     <label class="filters-label" for="filter-power-primary">
+                      <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813
+                        21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25
+                        19.403 25 12.5 19.403 0 12.5 0z"/>
+                      </svg>
+                      <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813
+                        21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25
+                        19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#c5c5c5" cx="12.5" cy="12.5" r="4.5"/>
+                      </svg>
                       Сетевые
                     </label>
                   </li>
@@ -495,7 +563,7 @@
                       В закладки
                     </button>
                   </div>
-                  <div class="product__new-ribbon"></div>
+                  <div class="product__new-ribbon product__new-ribbon--active"></div>
                 </li>
                 <li class="catalog__product product">
                   <a class="product__link" href="">
@@ -518,7 +586,7 @@
                     </button>
                   </div>
                   <div
-                    class="product__new-ribbon product__new-ribbon--active"
+                    class="product__new-ribbon"
                   ></div>
                 </li>
                 <li class="catalog__product product">
@@ -542,7 +610,7 @@
                       В закладки
                     </button>
                   </div>
-                  <div class="product__new-ribbon"></div>
+                  <div class="product__new-ribbon product__new-ribbon--active"></div>
                 </li>
                 <li class="catalog__product product">
                   <a class="product__link" href="">
@@ -588,7 +656,7 @@
                     </button>
                   </div>
                   <div
-                    class="product__new-ribbon product__new-ribbon--active"
+                    class="product__new-ribbon"
                   ></div>
                 </li>
               </ul>
@@ -739,7 +807,7 @@
           </p>
 
           <p class="page-footer__site-developer site-developer">
-            Разработано -
+            Разработано —
             <a
               class="site-developer__link"
               href="https://htmlacademy.ru/intensive/htmlcss"
@@ -753,14 +821,24 @@
 
     <section class="popup popup-cart">
       <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
-      <p class="popup-cart__description">Товар добавлен в корзину</p>
-      <p class="popup-cart__buttons">
-        <a class="button button-order" href="">Оформить заказ</a>
-        <button class="button button-continue" type="button">
-          Продолжить покупки
+      <div class="popup-cart__wrapper">
+        <p class="popup-cart__description">Товар добавлен в корзину!</p>
+        <p class="popup-cart__buttons">
+          <a class="button button--red button-order" href="">Оформить заказ</a>
+          <button class="button button-continue" type="button">
+            Продолжить покупки
+          </button>
+        </p>
+        <button class="button button-close" type="button">
+          <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+            7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+            7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+            1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
         </button>
-      </p>
-      <button class="button button-close" type="button">Закрыть</button>
+      </div>
     </section>
   </body>
 </html>
