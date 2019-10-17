@@ -819,26 +819,28 @@
       </div>
     </footer>
 
-    <section class="popup popup-cart">
-      <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
-      <div class="popup-cart__wrapper">
-        <p class="popup-cart__description">Товар добавлен в корзину!</p>
-        <p class="popup-cart__buttons">
-          <a class="button button--red button-order" href="">Оформить заказ</a>
-          <button class="button button-continue" type="button">
-            Продолжить покупки
+    <div class="popup-wrapper popup-cart-wrapper">
+      <section class="popup popup-cart">
+        <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
+        <div class="popup-cart__wrapper">
+          <p class="popup-cart__description">Товар добавлен в корзину!</p>
+          <p class="popup-cart__buttons">
+            <a class="button button--red button-order" href="">Оформить заказ</a>
+            <button class="button button-continue" type="button">
+              Продолжить покупки
+            </button>
+          </p>
+          <button class="button button-close" type="button">
+            <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+              7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+              7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+              1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
           </button>
-        </p>
-        <button class="button button-close" type="button">
-          <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
-            7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
-            7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
-            1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

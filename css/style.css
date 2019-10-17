@@ -600,7 +600,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header-navbar__link {
   display: block;
-  padding: 20px 30px 23px 30px;
+  padding: 20px 30px 23px;
 }
 
 .header-navbar__link:active {
@@ -705,7 +705,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .tools-slider__buttons {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 80px 20px;
+  margin: 0 20px 80px;
 }
 
 .tools-slider__bullets {
@@ -1236,7 +1236,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .transport-company-list__item {
   position: relative;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
 
 .transport-company-list__item::before {
@@ -1688,10 +1688,10 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   top: -1px;
   right: -1px;
-  
+
   width: 60px;
   height: 60px;
-  
+
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
@@ -2141,13 +2141,21 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* Popups */
 
+.popup-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.popup-map-wrapper {
+  top: 250%;
+}
+
 .popup-map {
   display: none; /* убрать свойство чтобы отобразить попап  */
 
-  position: absolute;
-  top: 2348px;
-  left: 362px;
+  position: relative;
   z-index: 100;
+  margin: 0 auto;
   width: 940px;
   height: 447px;
 
@@ -2167,13 +2175,16 @@ input[type="search"]::-webkit-search-results-decoration {
   border: 0;
 }
 
+.popup-write-us-wrapper {
+  top: 269%;
+}
+
 .popup-write-us {
   display: none; /* убрать свойство чтобы отобразить попап  */
 
-  position: absolute;
-  top: 2520px;
-  left: 522px;
+  position: relative;
   z-index: 100;
+  margin: 0 auto;
   width: 620px;
   min-height: 430px;
 
@@ -2278,13 +2289,16 @@ input[type="search"]::-webkit-search-results-decoration {
   min-height: 38px;
 }
 
+.popup-cart-wrapper {
+  top: 44%;
+}
+
 .popup-cart {
   display: none; /* убрать свойство чтобы отобразить попап  */
 
-  position: absolute;
-  top: 411px;
-  left: 522px;
+  position: relative;
   z-index: 100;
+  margin: 0 auto;
   width: 620px;
   min-height: 282px;
 
@@ -2347,7 +2361,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: auto;
   margin-left: 179px;
   padding-top: 65px;
-  
+
   font-size: 30px;
   line-height: 30px;
   min-height: 163px;
