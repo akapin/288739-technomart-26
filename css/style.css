@@ -169,7 +169,7 @@ img {
   padding-left: 49px;
   width: 100%;
 
-  line-height: 40px;
+  height: 41px;
   color: #ffffff;
 
   background-color: #293449;
@@ -986,7 +986,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .product__link {
   display: flex;
   flex-direction: column;
-  min-height: 316px;
+  height: 316px;
 }
 
 .product__title {
@@ -1131,7 +1131,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .company-services__description {
   margin: 0;
-  width: 398px;
+  width: 399px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1388,7 +1388,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .company-contacts__description {
   margin: 0;
   margin-bottom: 31px;
-  width: 179px;
+  width: 180px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2123,7 +2123,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-footer__footer-navbar-top {
   display: flex;
-  justify-content: flex-end;
   padding: 0;
   margin: 38px 0 30px;
 
@@ -2151,7 +2150,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .page-footer__footer-navbar-bottom {
   display: flex;
-  justify-content: flex-end;
   padding: 0;
   margin: 4px 0 auto;
 
