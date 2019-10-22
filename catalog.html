@@ -22,7 +22,11 @@
             <a class="company-logo__link" href="index.html"><span class="visually-hidden">Техномарт</span></a>
           </p>
 
-          <p class="page-header__search search">
+          <form
+            class="page-header__search search"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          >
             <label class="visually-hidden" for="search">
               Поиск
             </label>
@@ -38,7 +42,7 @@
               15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13
               4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
             </svg>
-          </p>
+          </form>
 
           <p class="page-header__bookmarks bookmarks">
             <a class="bookmarks__link" href="">
@@ -46,18 +50,18 @@
                 <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637
                 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
               </svg>
-              Закладки: <span>0</span>
+              Закладки: <span class="bookmarks__count">0</span>
             </a>
           </p>
 
           <p class="page-header__cart cart">
-            <a class="cart__link cart__link--has-items" href="">
+            <a class="cart__link" href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                 <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
                 <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
                 <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
               </svg>
-              Корзина: <span>10</span>
+              Корзина: <span class="cart__count">0</span>
             </a>
           </p>
 
@@ -67,13 +71,16 @@
         </div>
       </div>
       <div class="page-header__info">
-        <p class="page-header__description">Интернет-магазин
-          строительных материалов
+        <p class="page-header__description">
+          Интернет-магазин
+          строительных материалов<br>
           и инструментов для ремонта
         </p>
 
         <div class="page-header__company-info company-info">
-          <p class="company-info__phone">+7 (812) 555-05-55</p>
+          <p class="company-info__phone">
+              <a class="phone__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
           <address class="company-info__address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
@@ -84,7 +91,7 @@
             class="page-header__user-wrapper page-header__user-wrapper--logged"
           >
             <p class="user__username username">
-              <a class="username__link" href="">
+              <a class="username__link" href="profile.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                   <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415
                   1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374
@@ -94,7 +101,7 @@
               </a>
             </p>
             <p class="user__logout logout">
-              <a class="logout__link" href="">
+              <a class="logout__link" href="logout.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                   <g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
                     <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0
@@ -183,19 +190,16 @@
             >
               <fieldset class="product-filters__price-fieldset">
                 <legend>Цена:</legend>
-                <div class="price-filter__slider">
-                  <label class="visually-hidden" for="price-filter__slider-input">
-                    Фильтр цены
-                  </label>
-                  <input
-                    class="price-filter__slider-input"
-                    type="range"
-                    id="price-filter__slider-input"
-                    name="price-filter"
-                    min="0"
-                    max="3000"
-                    value="0"
-                  />
+                <div class="price-filter__slider-wrapper">
+                  <div class="price-filter__slider">
+                    <div class="price-filter__slider-controls">
+                      <div class="price-filter__slider-scale">
+                        <div class="price-filter__slider-bar"></div>   
+                      </div>
+                      <div class="price-filter__slider-toggle min-toggle"></div>
+                      <div class="price-filter__slider-toggle max-toggle"></div>
+                    </div>
+                  </div>
                 </div>
 
                 <p class="price-filter__range-input range-input">
@@ -206,6 +210,7 @@
                     class="range-input__min"
                     id="range-input__min"
                     type="number"
+                    name="min-price"
                     value="0"
                   />
                   <span>—</span>
@@ -216,6 +221,7 @@
                     class="range-input__max"
                     id="range-input__max"
                     type="number"
+                    name="max-price"
                     value="30000"
                   />
                 </p>
@@ -707,7 +713,9 @@
             <address class="company-info__address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
-            <p class="company-info__phone">+7 (812) 555-05-55</p>
+            <p class="company-info__phone">
+              <a class="phone__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
           </div>
         </div>
         <div class="page-footer__column">
@@ -813,28 +821,28 @@
       </div>
     </footer>
 
-    <div class="popup-wrapper popup-cart-wrapper">
-      <section class="popup popup-cart">
-        <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
-        <div class="popup-cart__wrapper">
-          <p class="popup-cart__description">Товар добавлен в корзину!</p>
-          <p class="popup-cart__buttons">
-            <a class="button button--red button-order" href="">Оформить заказ</a>
-            <button class="button button-continue" type="button">
-              Продолжить покупки
-            </button>
-          </p>
-          <button class="button button-close" type="button">
-            <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-              <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
-              7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
-              7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
-              1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
-            </svg>
-            <span class="visually-hidden">Закрыть</span>
+    <section class="popup popup-cart">
+      <h2 class="visually-hidden">Окно подтверждения добавления в корзину</h2>
+      <div class="popup-cart__wrapper">
+        <p class="popup-cart__description">Товар добавлен в корзину!</p>
+        <p class="popup-cart__buttons">
+          <a class="button button--red button-order" href="">Оформить заказ</a>
+          <button class="button button-continue" type="button">
+            Продолжить покупки
           </button>
-        </div>
-      </section>
-    </div>
+        </p>
+        <button class="button button-close" type="button">
+          <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+            7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+            7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+            1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </section>
+
+    <script src="js/catalog.js"></script>
   </body>
 </html>

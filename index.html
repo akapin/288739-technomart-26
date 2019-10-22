@@ -22,7 +22,11 @@
             <a class="company-logo__link"><span class="visually-hidden">Техномарт</span></a>
           </p>
 
-          <p class="page-header__search search">
+          <form
+            class="page-header__search search"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          >
             <label class="visually-hidden" for="search">
               Поиск
             </label>
@@ -38,7 +42,7 @@
               15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13
               4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
             </svg>
-          </p>
+          </form>
 
           <p class="page-header__bookmarks bookmarks">
             <a class="bookmarks__link" href="">
@@ -74,7 +78,9 @@
         </p>
 
         <div class="page-header__company-info company-info">
-          <p class="company-info__phone">+7 (812) 555-05-55</p>
+          <p class="company-info__phone phone">
+            <a class="phone__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
           <address class="company-info__address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
@@ -163,20 +169,6 @@
                 <div class="tools-slide tools-slide--1">
                   <img
                     class="tools-slide__image"
-                    src="img/drills.jpg"
-                    width="620"
-                    height="266"
-                    alt="Дрели"
-                  />
-                  <div class="tools-slide__info">
-                    <h3 class="tools-slide__title">Дрели</h3>
-                    <p class="tools-slide__description">Соседям на радость!</p>
-                  </div>
-                </div>
-
-                <div class="tools-slide tools-slide--2">
-                  <img
-                    class="tools-slide__image"
                     src="img/perforators.jpg"
                     width="620"
                     height="266"
@@ -187,6 +179,20 @@
                     <p class="tools-slide__description">
                       Настоящие мужские игрушки
                     </p>
+                  </div>
+                </div>
+
+                <div class="tools-slide tools-slide--2 tools-slide--active">
+                  <img
+                    class="tools-slide__image"
+                    src="img/drills.jpg"
+                    width="620"
+                    height="266"
+                    alt="Дрели"
+                  />
+                  <div class="tools-slide__info">
+                    <h3 class="tools-slide__title">Дрели</h3>
+                    <p class="tools-slide__description">Соседям на радость!</p>
                   </div>
                 </div>
               </div>
@@ -218,7 +224,7 @@
                     name="tools-slider"
                     id="tools-drills-radio"
                     class="tools-slider__radio"
-                  />
+                  ></input>
                   <label
                     for="tools-drills-radio"
                     class="tools-slider__bullet tools-slider__bullet--1 visually-hidden"
@@ -231,7 +237,7 @@
                     id="tools-perforators-radio"
                     class="tools-slider__radio"
                     checked
-                  />
+                  ></input>
                   <label
                     for="tools-perforators-radio"
                     class="tools-slider__bullet tools-slider__bullet--2 visually-hidden"
@@ -366,7 +372,7 @@
                   src="img/logo-bosch.jpg"
                   width="220"
                   height="145"
-                  alt="Bosch"
+                  alt="Компания Bosch"
                 />
               </a>
             </li>
@@ -377,7 +383,7 @@
                   src="img/logo-makita.jpg"
                   width="220"
                   height="145"
-                  alt="Makita"
+                  alt="Компания Makita"
                 />
               </a>
             </li>
@@ -388,7 +394,7 @@
                   src="img/logo-dewalt.jpg"
                   width="220"
                   height="145"
-                  alt="DeWALT"
+                  alt="Компания DeWALT"
                 />
               </a>
             </li>
@@ -399,7 +405,7 @@
                   src="img/logo-interskol.jpg"
                   width="220"
                   height="145"
-                  alt="Интерскол"
+                  alt="Компания Интерскол"
                 />
               </a>
             </li>
@@ -410,7 +416,7 @@
                   src="img/logo-hitachi.jpg"
                   width="220"
                   height="145"
-                  alt="Hitachi"
+                  alt="Компания Hitachi"
                 />
               </a>
             </li>
@@ -421,7 +427,7 @@
                   src="img/logo-lg.jpg"
                   width="220"
                   height="145"
-                  alt="LG"
+                  alt="Компания LG"
                 />
               </a>
             </li>
@@ -432,7 +438,7 @@
                   src="img/logo-aeg.jpg"
                   width="220"
                   height="145"
-                  alt="AEG"
+                  alt="Компания AEG"
                 />
               </a>
             </li>
@@ -443,7 +449,7 @@
                   src="img/logo-metabo.jpg"
                   width="220"
                   height="145"
-                  alt="Metabo"
+                  alt="Компания Metabo"
                 />
               </a>
             </li>
@@ -464,7 +470,9 @@
           <div class="company-services__services-slider services-slider">
             <ul class="services-slider__list">
               <li
-                class="services-slider__bullet services-slider__bullet--active"
+                class="services-slider__bullet
+                services-slider__shipment-bullet
+                services-slider__bullet--active"
               >
                 <input
                   type="radio"
@@ -480,7 +488,7 @@
                   Доставка
                 </label>
               </li>
-              <li class="services-slider__bullet">
+              <li class="services-slider__bullet services-slider__warranty-bullet">
                 <input
                   type="radio"
                   name="services-slider"
@@ -494,7 +502,7 @@
                   Гарантия
                 </label>
               </li>
-              <li class="services-slider__bullet">
+              <li class="services-slider__bullet services-slider__credit-bullet">
                 <input
                   type="radio"
                   name="services-slider"
@@ -511,7 +519,7 @@
             </ul>
 
             <div class="services-slider__content">
-              <div class="services-slide services-slide--1">
+              <div class="services-slide services-slide--1 services-slide--active">
                 <h3 class="services-slide__title">
                   Доставка
                 </h3>
@@ -581,12 +589,12 @@
                 ЖелДорЭкспедиция
               </li>
             </ul>
-            <button
+            <a
               class="button button--red company-desc__button"
-              type="button"
+              href="about.html"
             >
               Подробнее о компании
-            </button>
+            </a>
           </section>
 
           <section class="page-content__company-contacts company-contacts">
@@ -603,15 +611,15 @@
                 src="img/map.png"
                 width="300"
                 height="158"
-                alt="Карта"
+                alt="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"
               />
             </a>
-            <button
+            <a
               class="button button--red company-contacts__button"
-              type="button"
+              href="writeus.html"
             >
               Заблудились? Напишите нам!
-            </button>
+            </a>
           </section>
         </div>
       </div>
@@ -628,7 +636,9 @@
             <address class="company-info__address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
-            <p class="company-info__phone">+7 (812) 555-05-55</p>
+            <p class="company-info__phone">
+              <a class="phone__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
           </div>
         </div>
         <div class="page-footer__column">
@@ -734,83 +744,84 @@
       </div>
     </footer>
 
-    <div class="popup-wrapper popup-map-wrapper">
-      <section class="popup popup-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img
-          class="popup-map__image"
-          src="img/map-popup.png"
-          width="940"
-          height="447"
-          alt="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"
-        />
-        <button class="button button-close" type="button">
-          <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
-            7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
-            7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
-            1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </section>
-    </div>
+    <section class="popup popup-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe class="popup-map__interactive-map"
+        src="https://yandex.ru/map-widget/v1/-/CGr2nN4-" width="940" height="447">
+      </iframe>
+      <img
+        class="popup-map__image"
+        src="img/map-popup.png"
+        width="940"
+        height="447"
+        alt="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург"
+      />
+      <button class="button button-close" type="button">
+        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+          7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+          7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+          1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
     
-    <div class="popup-wrapper popup-write-us-wrapper">
-      <section class="popup popup-write-us">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form
-          class="popup-write-us__write-us-form write-us-form"
-          method="post"
-          action="https://echo.htmlacademy.ru"
-        >
-          <div class="write-us-form__wrapper">
-            <div class="write-us-form__item">
-              <label class="write-us-form__label" for="username">Ваше имя:</label>
-              <input
-                class="write-us-form__input"
-                id="username"
-                type="text"
-                name="username"
-                placeholder="Имя Фамилия"
-              />
-            </div>
-            <div class="write-us-form__item">
-              <label class="write-us-form__label" for="email">Ваш e-mail:</label>
-              <input
-                class="write-us-form__input"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="email@example.com"
-              />
-            </div>
-            <div class="write-us-form__item">
-              <label class="write-us-form__label" for="message">Текст письма:</label>
-              <textarea
-                class="write-us-form__textarea"
-                id="message"
-                name="message"
-                placeholder="В свободной форме"
-              ></textarea>
-            </div>
+    <section class="popup popup-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form
+        class="popup-write-us__write-us-form write-us-form"
+        method="post"
+        action="https://echo.htmlacademy.ru"
+      >
+        <div class="write-us-form__wrapper">
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="username">Ваше имя:</label>
+            <input
+              class="write-us-form__input"
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Имя Фамилия"
+            />
           </div>
-          
-          <div class="write-us-button-wrapper">
-            <button class="button button--red button-write-us" type="submit">Отправить</button>
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="email">Ваш e-mail:</label>
+            <input
+              class="write-us-form__input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
           </div>
-          
-        </form>
-        <button class="button button-close" type="button">
-          <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-            <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
-            7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
-            7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
-            1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </section>
-    </div>
+          <div class="write-us-form__item">
+            <label class="write-us-form__label" for="message">Текст письма:</label>
+            <textarea
+              class="write-us-form__textarea"
+              id="message"
+              name="message"
+              placeholder="В свободной форме"
+            ></textarea>
+          </div>
+        </div>
+        
+        <div class="write-us-button-wrapper">
+          <button class="button button--red button-write-us" type="submit">Отправить</button>
+        </div>
+        
+      </form>
+      <button class="button button-close" type="button">
+        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422
+          7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421
+          7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389
+          1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
