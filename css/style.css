@@ -979,6 +979,8 @@ img {
 
 .popular-products__product {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-right: 20px;
   margin-bottom: 21px;
 
