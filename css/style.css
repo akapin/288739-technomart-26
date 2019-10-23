@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", "sans-serif";
   font-weight: 400;
 }
 
@@ -54,7 +54,7 @@ img {
 }
 
 .button--white {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
 
   background-color: #ffffff;
@@ -330,6 +330,8 @@ img {
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
+
+  white-space: pre-line;
 }
 
 .page-header__company-info {
@@ -972,7 +974,7 @@ img {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
 
   list-style: none;
 }
@@ -1147,7 +1149,7 @@ img {
   margin: 0;
   width: 399px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
 }
@@ -1269,7 +1271,7 @@ img {
 }
 
 .services-slide--2 .services-slide__description {
-  width: 379px;
+  width: 378px;
 }
 
 .services-slide--3 {
@@ -1293,7 +1295,7 @@ img {
 
 .services-slide--3 .services-slide__description {
   margin-bottom: 36px;
-  width: 279px;
+  width: 280px;
 }
 
 .services-slide__button {
@@ -1315,7 +1317,7 @@ img {
 .services-slide__description {
   margin: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
 }
@@ -1343,7 +1345,7 @@ img {
 .company-desc__description {
   margin: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
 }
@@ -1409,7 +1411,7 @@ img {
   margin-bottom: 31px;
   width: 180px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
 }
@@ -1429,7 +1431,7 @@ img {
   margin: 0;
   padding: 21px 0 20px 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1480,7 +1482,7 @@ img {
 .page-content__product-filters {
   width: 220px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   text-transform: uppercase;
 
   list-style: none;
@@ -1624,7 +1626,7 @@ img {
   margin: 0;
   padding: 10px 18px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1745,7 +1747,7 @@ img {
   align-items: center;
   justify-content: space-between;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1758,7 +1760,7 @@ img {
   margin: 0;
   padding: 10px 19px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1859,7 +1861,7 @@ img {
   margin-bottom: 52px;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
 
   list-style: none;
 }
@@ -1911,10 +1913,12 @@ img {
   right: -1px;
 }
 
+.popular-products__product .product__buttons,
 .catalog__product .product__buttons {
   display: none;
 }
 
+.popular-products__product:hover .product__buttons,
 .catalog__product:hover .product__buttons {
   display: block;
 }
@@ -1931,7 +1935,7 @@ img {
 
   background-color: #ffffff;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", "sans-serif";
 }
 
 .product__button-buy {
@@ -1945,7 +1949,7 @@ img {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", "sans-serif";
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1993,7 +1997,7 @@ img {
 
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", "sans-serif";
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -2019,7 +2023,7 @@ img {
   margin-bottom: 60px;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
 
   list-style: none;
 }
@@ -2093,7 +2097,7 @@ img {
 .product-desc__description {
   margin: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
 }
@@ -2461,7 +2465,7 @@ img {
   width: 100%;
   min-height: 38px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 18px;
 
@@ -2480,7 +2484,7 @@ img {
   width: 100%;
   min-height: 115px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 18px;
 

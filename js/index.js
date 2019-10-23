@@ -41,6 +41,14 @@ var mapLink = document.querySelector(".company-contacts__map-link");
 var mapPopup = document.querySelector(".popup-map");
 var mapClose = mapPopup.querySelector(".popup-map .button-close");
 
+// Переменные для работы кнопок покупки и закладок
+var buyButtons = document.querySelectorAll(".product__button-buy");
+var bookmarkButtons = document.querySelectorAll(".product__button-bookmarks");
+var bookmarksLink = document.querySelector(".bookmarks__link");
+var bookmarksCount = document.querySelector(".bookmarks__count");
+var cartLink = document.querySelector(".cart__link");
+var cartCount = document.querySelector(".cart__count");
+
 // Обработчики формы обратной связи
 try {
   storageUsername = localStorage.getItem("username");
@@ -200,3 +208,22 @@ creditSliderItem.addEventListener("click", function(evt) {
   warrantySlide.classList.remove("services-slide--active");
   creditSlide.classList.add("services-slide--active");
 });
+
+
+// Логика нажатий кнопок действий карточки продукта
+
+for (i = 0; i < buyButtons.length; i++) {
+  buyButtons[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    cartLink.classList.add("has-items");
+    cartCount.innerText = Number(cartCount.innerText) + 1;
+  });
+}
+
+for (i = 0; i < bookmarkButtons.length; i++) {
+  bookmarkButtons[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    bookmarksLink.classList.add("has-items");
+    bookmarksCount.innerText = Number(bookmarksCount.innerText) + 1;
+  });
+}
